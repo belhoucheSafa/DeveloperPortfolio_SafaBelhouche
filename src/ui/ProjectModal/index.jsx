@@ -3,7 +3,7 @@ import Plyr from "plyr-react";
 import "plyr-react/plyr.css";
 import "./ProjectModal.css";
 import ParticlesBackground from "../../components/ParticlesBackground";
-import PROJECTDEMOVIDEO from "../../assets/videos/project1.mp4";
+import PROJECTDEMOVIDEO from "../../assets/projectsDemos/MezoughiDashRecord.mp4";
 import SyntaxHighlight from "react-syntax-highlighter";
 import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { IoLockClosed } from "react-icons/io5";
@@ -32,17 +32,20 @@ const project = {
 const customTheme = {
   ...a11yLight,
   // override token colors
-  "hljs-comment": { color: "#888888", fontStyle: "italic" }, // comments
-  "hljs-keyword": { color: "#cf7f4a", fontWeight: "bold" }, // keywords
-  "hljs-number": { color: "#cf7f4a" }, // constants
-  "hljs-string": { color: "#bab5c1" }, // strings
-  "hljs-variable": { color: "#7c3fff", fontWeight: "bold" }, // general purple
+  "hljs-comment": { color: "#888888", fontStyle: "italic" }, 
+  "hljs-keyword": { color: "#cf7f4a", fontWeight: "bold" }, 
+  "hljs-number": { color: "#cf7f4a" }, 
+  "hljs-string": { color: "#bab5c1" }, 
+  "hljs-variable": { color: "#7c3fff", fontWeight: "bold" }, 
 };
-const ProjectModal = ({ isOpen, onClose }) => {
+const ProjectModal = ({ isOpen, onClose , project }) => {
   const [animationClass, setAnimationClass] = useState("");
   const [wasOpened, setWasOpened] = useState(false);
   const playerRef = useRef(null);
   const modalRef = useRef(null);
+
+
+  console.log(project)
 
   useEffect(() => {
     if (isOpen) {
@@ -109,7 +112,7 @@ const ProjectModal = ({ isOpen, onClose }) => {
                 </div>
                 <div className="screen__tab__title">
                   <IoLockClosed className="locked__icon" />{" "}
-                  https://Demo/E-Commerce Application
+                  https://Demo/{project.title}
                 </div>
               </div>
               <div className="screen__content">
@@ -120,7 +123,7 @@ const ProjectModal = ({ isOpen, onClose }) => {
                       type: "video",
                       sources: [
                         {
-                          src: PROJECTDEMOVIDEO,
+                          src: project.video,
                           type: "video/mp4",
                         },
                       ],
@@ -155,7 +158,7 @@ const ProjectModal = ({ isOpen, onClose }) => {
                       }}
                       wrapLongLines={true}
                     >
-                      {projectCode}
+                      {project.projectCode}
                     </SyntaxHighlight>
                   </div>
                 </div>

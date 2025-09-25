@@ -32,7 +32,26 @@ import {
   emailicon,
   messengericon,
   whatsappicon,
+  mongodb,
+  nodejs,
+  reactjs,
+  redux,
+  threejs,
+  jwt,
+  apex,
+  gsap,
+  scss,
 } from "./assets";
+
+import MezoughiLandingPage from "./assets/projectsDemos/MezoughiLandingPage.mp4";
+import MezoughiDashRecord from "./assets/projectsDemos/MezoughiDashRecord.mp4";
+import SplytProteinLanding from "./assets/projectsDemos/SplytProject.mp4";
+import StockManagementApp from "./assets/projectsDemos/StockManagementApp.mp4";
+import PSCManagementApp from "./assets/projectsDemos/PSC_MANAGEMENT_APP_V0.mp4";
+import RefineGaming from "./assets/projectsDemos/refineGamingLanding.mp4";
+import BluePapilio from "./assets/projectsDemos/DjangoBluePapilio.mp4";
+import BridgeEd from "./assets/projectsDemos/BridgeEdProject.mp4";
+
 
 export const menu = [
   { name: "About" },
@@ -72,207 +91,106 @@ export const services = [
                   into practical and robust solutions that meet technical and business requirements.`,
   },
 ];
+
 export const projects = [
   {
-    title: "AI Powered School",
+    title: "Recycling Plastic Landing Page",
     image: project1,
-    category: "UI/UX",
-    description: `Transforming education with AI, our School UI Design project revolutionizes the 
-                     learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
-                     and intuitive navigation, our design empowers educators and students alike. Experience 
-                     innovation at its finest as we pave the way for a smarter, more efficient educational 
-                     journey.`,
+    category: "Landing Page",
+    description: `A modern, fully designed landing page for a recycling plastic business. The business collects plastic bottles from suppliers and transforms them into multiple types of granules. The landing page features a unique design with smooth pastel colors, 3D icons, and custom images. I handled the full UI/UX design.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "XD",
-        logo: xd,
-      },
+      { name: "React", logo: react },
+      { name: "SCSS", logo: scss },
     ],
+    video: MezoughiLandingPage,
+    projectCode: `
+const project = {
+  name: "Recycling Plastic Landing Page",
+  description: \`A modern, fully designed landing page for a recycling plastic business. The business collects plastic bottles from suppliers and transforms them into multiple types of granules. The landing page features a unique design with smooth pastel colors, 3D icons, and custom images. I handled the full UI/UX design.\`,
+  techs: ["React", "SCSS"],
+  github: "Contact me for the code 😉",
+  tasks: [
+    "Full UI/UX design",
+    "3D icons and images",
+    "Landing page implementation",
+  ],
+  notes: () => {
+    // Smooth pastel colors
+    // Unique modern design
+    // Fully responsive
+  }
+};
+    `,
   },
   {
-    title: "E-Commerce Application",
-    image: project2,
-    category: "Web",
-    description: `Enhance your online shopping experience with our E-Commerce Application 
-      UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
-      interface offers easy navigation, personalized recommendations, and secure 
-      transactions. Elevate your digital storefront and captivate customers with a visually 
-      stunning design tailored to your brand`,
+    title: "Recycling Plastic Admin Platform",
+    image: project1,
+    category: "Web App | Platform",
+    description: `A platform for managing the recycling business operations. Built with React, Node.js, MongoDB, JWT authentication, ApexCharts, and SCSS. The system manages admins, employees, suppliers, orders, and products securely with full CRUD functionality.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "ReactJs",
-        logo: react,
-      },
-      {
-        name: "XD",
-        logo: xd,
-      },
-      {
-        name: "CSS",
-        logo: css,
-      },
-      {
-        name: "JavaScript",
-        logo: javascript,
-      },
+      { name: "React", logo: react },
+      { name: "Node.js", logo: nodejs },
+      { name: "MongoDB", logo: mongodb },
+      { name: "JWT", logo: jwt },
+      { name: "ApexCharts", logo: apex },
+      { name: "SCSS", logo: scss },
     ],
+    video: MezoughiDashRecord,
+    projectCode: `
+const project = {
+  name: "Recycling Plastic Admin Platform",
+  description: \`A platform for managing the recycling business operations. Built with React, Node.js, MongoDB, JWT authentication, ApexCharts, and SCSS. The system manages admins, employees, suppliers, orders, and products securely with full CRUD functionality.\`,
+  techs: ["React", "Node.js", "MongoDB", "JWT", "ApexCharts", "SCSS"],
+  github: "Contact me for the code 😉",
+  tasks: [
+    "Admin, employees, clients, orders, suppliers, stock and products management",
+    "Orders and products CRUD",
+    "Secure login with JWT",
+    "Dashboard with ApexCharts",
+  ],
+  notes: () => {
+    // Secure authentication
+    // Full CRUD
+    // Dashboard analytics
+  }
+};
+    `,
   },
   {
-    title: "Robotic Engineering Web Application",
-    image: project3,
-    category: "Web",
-    description: `Unlock the future of robotics with our Robotic Engineering Web Application
-      project. Seamlessly integrating cutting-edge technology, data analytics, 
-      and collaborative tools, our platform empowers engineers to design, simulate, 
-      and optimize robotic systems. Experience innovation at its peak as we redefine the 
-      boundaries of robotic engineering.`,
+    title: "Splyt Protein Landing Page",
+    image: project1,
+    category: "Landing Page",
+    description: `A highly modern landing page for Splyt Protein, a fizzy beverage. Built with React, TailwindCSS, and GSAP. Every section includes smooth modern animations, 3D effects, and interactive elements. This project was my first time using GSAP, and I applied it while learning in a Three.js + GSAP bootcamp.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "ReactJs",
-        logo: react,
-      },
-      {
-        name: "Figma",
-        logo: figma,
-      },
-      {
-        name: "Tailwind",
-        logo: tailwind,
-      },
+      { name: "React", logo: react },
+      { name: "TailwindCSS", logo: tailwind },
+      { name: "GSAP", logo: gsap },
     ],
-  },
-  {
-    title: "Project Management application",
-    image: project4,
-    category: "Apps",
-    description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
-                     Elevate your project management experience and achieve success with ease.`,
-    demoLink: "https://google.com/",
-    stacks: [
-      {
-        name: "React Native",
-        logo: reactnative,
-      },
-      {
-        name: "XD",
-        logo: xd,
-      },
-      {
-        name: "CSS",
-        logo: css,
-      },
-    ],
-  },
-  {
-    title: "Mobile bank - App Design",
-    image: project5,
-    category: "UI/UX",
-    description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
-    demoLink: "https://google.com/",
-    stacks: [
-      {
-        name: "Figma",
-        logo: figma,
-      },
-    ],
-  },
-  {
-    title: "Quiz App Development",
-    image: project6,
-    category: "Apps",
-    description: `Elevate engagement and knowledge retention with our Quiz App 
-                    Development project. Seamlessly crafted for interactive learning 
-                    experiences, our app offers customizable quizzes, real-time feedback, 
-                    and captivating visuals. Empower users to test their knowledge anytime,
-                     anywhere, fostering a dynamic learning environment tailored to their 
-                     needs.`,
-    demoLink: "https://google.com/",
-    stacks: [
-      {
-        name: "React Native",
-        logo: reactnative,
-      },
-      {
-        name: "Figma",
-        logo: figma,
-      },
-      {
-        name: "XD",
-        logo: xd,
-      },
-      {
-        name: "Bootstrap",
-        logo: bootstrap,
-      },
-    ],
+    video: SplytProteinLanding,
+    projectCode: `
+const project = {
+  name: "Splyt Protein Landing Page",
+  description: \`A highly modern landing page for Splyt Protein, a fizzy beverage. Built with React, TailwindCSS, and GSAP. Every section includes smooth modern animations, 3D effects, and interactive elements. This project was my first time using GSAP, and I applied it while learning in a Three.js + GSAP bootcamp.\`,
+  techs: ["React", "TailwindCSS", "GSAP"],
+  github: "Contact me for the code 😉",
+  tasks: [
+    "GSAP animations for all sections",
+    "3D effects and interactive design",
+    "TailwindCSS responsive implementation",
+  ],
+  notes: () => {
+    // First GSAP project
+    // Modern animations applied
+    // Interactive UX
+  }
+};
+    `,
   },
 ];
 
-export const skills = [
-  {
-    title: "UI/UX",
-    data: [
-      {
-        skill: "Figma",
-        level: "Experienced",
-        logo: figma,
-      },
-      {
-        skill: "Sketch",
-        level: "Intermediate",
-        logo: sketch,
-      },
-      {
-        skill: "XD",
-        level: "Intermediate",
-        logo: xd,
-      },
-    ],
-  },
-  {
-    title: "Frontend Development",
-    data: [
-      {
-        skill: "HTML",
-        level: "Experienced",
-        logo: html,
-      },
-      {
-        skill: "CSS",
-        level: "Experienced",
-        logo: css,
-      },
-      {
-        skill: "JavaScript",
-        level: "Experienced",
-        logo: javascript,
-      },
-      {
-        skill: "Tailwind",
-        level: "Intermediate",
-        logo: tailwind,
-      },
-      {
-        skill: "Bootstrap",
-        level: "Experienced",
-        logo: bootstrap,
-      },
-      {
-        skill: "React",
-        level: "Experienced",
-        logo: react,
-      },
-      {
-        skill: "React Native",
-        level: "Experienced",
-        logo: reactnative,
-      },
-    ],
-  },
-];
 export const contactInfo = [
   {
     name: "Email",

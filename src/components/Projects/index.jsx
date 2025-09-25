@@ -10,7 +10,7 @@ const Projects = () => {
                 </div>
                 <div className="projects__container">
                     {projects.map((project, index) => (
-                        <ProjectCard key={index} {...project} />
+                        <ProjectCard key={index} project={project} />
                     ))}
                 </div>
             </div>

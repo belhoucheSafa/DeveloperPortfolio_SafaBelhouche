@@ -38,3 +38,7 @@ export { default as reactjs } from "./reactjs.png";
 export { default as redux } from "./redux.png";
 export { default as typescript } from "./typescript.png";
 export { default as threejs } from "./threejs.svg";
+export { default as scss} from "./scss.png";
+export { default as gsap} from "./gsap.png";
+export { default as jwt} from "./jwt.png";
+export { default as apex} from "./apex.png";
